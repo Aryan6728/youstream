@@ -1,0 +1,27 @@
+{
+  "name": "@youstream/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "YouStream confidential payroll streaming - Hardhat contracts (Nox / ETH Sepolia)",
+  "scripts": {
+    "build": "hardhat compile",
+    "deploy:piggybank": "hardhat run scripts/deploy-piggybank.ts --network sepolia",
+    "e2e:piggybank": "hardhat run scripts/piggybank-e2e.ts --network sepolia"
+  },
+  "dependencies": {
+    "@iexec-nox/handle": "^0.1.0-beta.13",
+    "@iexec-nox/nox-confidential-contracts": "^0.2.2",
+    "@iexec-nox/nox-protocol-contracts": "^0.2.4",
+    "@openzeppelin/contracts": "^5.6.1",
+    "ethers": "^6.13.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.3",
+    "dotenv": "^16.4.5",
+    "hardhat": "^3.4.0",
+    "solc": "0.8.35",
+    "typescript": "^5.6.0",
+    "viem": "^2.46.3"
+  }
+}

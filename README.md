@@ -83,3 +83,4 @@ SOLC_PATH="$(pwd)/node_modules/solc/soljson.js" pnpm hardhat compile
 - Off-chain `decrypt()` is gated by on-chain `isViewer`, which is true for accounts granted via `allow` (admins) or `addViewer` (view-only).
 
 More detail in [`docs/nox-notes.md`](./docs/nox-notes.md)
+by Mahesh Vishwakarma 

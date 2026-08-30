@@ -82,4 +82,4 @@ SOLC_PATH="$(pwd)/node_modules/solc/soljson.js" pnpm hardhat compile
 - After every operation producing a new handle, grant `Nox.allowThis(h)` + `Nox.allow(h, user)` **before returning** — transient access dies at end-of-tx.
 - Off-chain `decrypt()` is gated by on-chain `isViewer`, which is true for accounts granted via `allow` (admins) or `addViewer` (view-only).
 
-More detail in [`docs/nox-notes.md`](./docs/nox-notes.md).
+More detail in [`docs/nox-notes.md`](./docs/nox-notes.md)

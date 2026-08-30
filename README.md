@@ -1,6 +1,6 @@
 # YouStream — Confidential Payroll Streaming on Nox
 
-Confidential payroll & salary-streaming dApp for the **iExec WTF Hackathon (Summer Edition)**, built on **Nox** (iExec's TEE-based confidential smart contract layer) with **Sablier** composability, deployed on **ETH Sepolia**.
+Confidential payroll & salary-streaming dApp for the **iExec WTF Hackathon (Summer Edition)**, built on **Nox** (iExec's TEE-based confidential smart contract layer) with **Sablier** composability, deployed on **ETH Sepolia*
 
 **Core idea:** on-chain payroll where salary amounts and balances are fully encrypted. Stream existence and parties are public; *amounts* are decryptable only by the employer and the employee, enforced by Nox's on-chain ACL.
 

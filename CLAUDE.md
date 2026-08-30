@@ -1,7 +1,5 @@
 # YouStream — Confidential Payroll Streaming on Nox
 
-> **Context for Claude Code:** This file is the complete project brief. Read it fully before writing any code. Build incrementally, keep every milestone in a working state, and never use mock data in the final product — the hackathon judges test end-to-end on ETH Sepolia.
-
 ---
 
 ## 1. What we are building

@@ -28,5 +28,4 @@ The SDK types accept the full Solidity type universe (`address`, `bytesN`, all i
 ### 7. Local end-to-end testing requires the full Docker off-chain stack
 `nox-hardhat-plugin` spins up KMS, ingestor, runner, gateway, NATS and S3 via docker-compose and only hooks the `test` task. There is no lightweight mock of `NoxCompute` for pure-logic unit tests, and no documented way to use the stack from `hardhat run` scripts. We therefore split tests into (a) pure-logic tests around the Nox call sites and (b) scripted integration tests against Sepolia.
 
-### 8. (Environment-specific, not a Nox bug) compiler downloads
-Our CI sandbox blocks `binaries.soliditylang.org`; Hardhat 3's `solidity.path` option pointed at the npm `solc` wasm build (`SOLC_PATH` in our `hardhat.config.ts`) is a clean offline workaround. Noted here in case other hackathon teams hit restricted networks.
+

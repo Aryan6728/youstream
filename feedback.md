@@ -16,9 +16,6 @@ Living log of real issues, friction, and suggestions encountered while building 
 ### 2. `@iexec-nox/handle` README understates network support
 The README says built-in defaults exist only for Arbitrum Sepolia (421614) and that any other chain needs a full config override. The shipped code (`dist/*/config/networks.js`) actually includes ETH Sepolia (11155111) defaults too (gateway `https://gateway-testnets.noxprotocol.dev`, subgraph, NoxCompute `0x24ef36…f77bf`). Since ETH Sepolia is the hackathon's mandatory target, this stale README is likely to mislead participants into writing unnecessary override plumbing.
 
-### 3. `nox-hardhat-starter` repo link 404s
-The hackathon doc links a `nox-hardhat-starter` repo that does not exist (404). The `nox-hardhat-plugin` exists on npm (v0.1.0) and its README shows config, but a working starter repo would remove a lot of guesswork. (Question pending for Discord.)
-
 ### 4. ACL semantics for decryption are only discoverable in the contract source
 Docs describe `Nox.allow(handle, user)` as "lets that address decrypt off-chain", while the JS SDK's `decrypt()` actually checks `isViewer(handle, user)` on-chain before contacting the gateway. These agree only because `ACL.sol` counts `allow()`-granted accounts (admins) as viewers. There is also a separate, weaker `addViewer()` role (decrypt-only, no compute/re-grant rights) that the guides barely mention — it is exactly what you want for third-party read access (e.g. an auditor), so it deserves documentation.
 
